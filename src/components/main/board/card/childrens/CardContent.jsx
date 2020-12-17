@@ -4,12 +4,9 @@ class CardContent extends React.Component {
 
     render(){
         return(
-            <div className="card-body">
+            <div className="card-body ">
                 {/*Title*/}
-                <h4 className="card-title">{this.props.title}</h4>
-                {/*Text*/}
-                <p className="card-text">{this.props.content}
-                </p>
+                <h4 className="card-title h5" style= {{ height: 40}}>{this.props.title}</h4>
             </div>
         )
     }

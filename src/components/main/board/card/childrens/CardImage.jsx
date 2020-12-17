@@ -6,10 +6,10 @@ import React from 'react';
 
 
 class CardImage extends React.Component {
-    render(props){
+    render(){
     return( 
         
-        <p><img src={this.props.image} className="card-img-top"/></p>
+    <img src={`https://image.tmdb.org/t/p/w500/${this.props.image}`} className="card-img-top" height="350px"/>
       
      )
     }
