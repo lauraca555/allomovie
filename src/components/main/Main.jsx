@@ -30,11 +30,11 @@ class Main extends React.Component {
       }
 
       render(){
-          if(this.state.value === false) return <h4>Loading ...</h4>
+          if(this.state.isLoaded === false) return <h4>Loading ...</h4>
           return(
-              
-            <Board movies = {this.state.movies}/>
-            
+            <div className="container mt-5">
+                <Board movies = {this.state.movies}/>
+            </div>  
           )
       }
 }

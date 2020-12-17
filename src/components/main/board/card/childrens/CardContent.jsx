@@ -4,14 +4,13 @@ class CardContent extends React.Component {
 
     render(){
         return(
-            <>
+            <div className="card-body">
                 {/*Title*/}
-                <h4 className="card-title">Card title</h4>
+                <h4 className="card-title">{this.props.title}</h4>
                 {/*Text*/}
-                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.
+                <p className="card-text">{this.props.content}
                 </p>
-            </>
+            </div>
         )
     }
 

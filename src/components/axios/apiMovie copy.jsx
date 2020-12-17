@@ -6,7 +6,7 @@ const apiMovie = Axios.create({
 
 export default apiMovie;
 
-const token = '';
+const token = ' ';
 
 apiMovie.interceptors.request.use((request) => {
     request.headers['Authorization'] = `Bearer ${ token }`

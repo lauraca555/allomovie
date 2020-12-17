@@ -6,11 +6,17 @@ class Board extends React.Component {
     render(){
         
         return(
-            <div className="container m-5 px-3 mx-auto">
-                <div className="row">
-                    <Card movies = {this.props.movies}/>
-                </div>
-
+            <div className="row my-3">
+                
+                <Card movies = {this.props.movies}/>
+                <Card movies = {this.props.movies}/>
+                <Card movies = {this.props.movies}/>
+                <Card movies = {this.props.movies}/>
+                <Card movies = {this.props.movies}/>
+                <Card movies = {this.props.movies}/>
+                <Card movies = {this.props.movies}/>
+                <Card movies = {this.props.movies}/>
+                
             </div>
         )
     }
