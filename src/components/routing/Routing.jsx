@@ -1,8 +1,12 @@
 import React from 'react';
 
-import App from '../../App';
+
 import Movie from '../main/movie/Movie';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch} from 'react-router-dom';
+import Main from '../main/Main';
+
+
+
 
 
 
@@ -12,9 +16,13 @@ class Routing extends React.Component {
         return(
             <>
                 <BrowserRouter>
-                    <Route exact path='/' component ={App} />
-                    <Route path='/film' component ={Movie} />
+                    <Switch>
+                        <Route exact path='/' component={Main} />
+                        <Route path='/film' component={Movie} />
+                    </Switch>
                 </BrowserRouter>
+                    
+                
             </>
         )
     }
