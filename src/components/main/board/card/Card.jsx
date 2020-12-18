@@ -11,9 +11,9 @@ import CardImage from './childrens/CardImage';
 const Card = (props) => (
     
         <>    
-        {props.movies.map(movie =>(
-            <div className="col-md-6 col-lg-4 col-xl-3 mb-3">
-                <div className="card">    
+        {props.movies.map((movie, index) =>(
+            <div className="col-md-6 col-lg-4 col-xl-3 mb-3" key={index}>
+                <div className="card" >    
                     {<CardImage image = {movie.poster_path}/>}
                     {<CardContent title = {movie.title} />}
                     {<CardButton/>}

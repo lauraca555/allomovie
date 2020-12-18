@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 class NavBar extends React.Component{
 
@@ -6,7 +7,7 @@ class NavBar extends React.Component{
         return(
             <nav className="navbar navbar-light orange lighten-1">
                 <div className="container-fluid my-1">
-                    AlloMovie
+                    <NavLink to="/"> AlloMovie</NavLink>
                 </div>
             </nav>
               

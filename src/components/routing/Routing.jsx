@@ -4,6 +4,7 @@ import React from 'react';
 import Movie from '../main/movie/Movie';
 import { BrowserRouter, Route, Switch} from 'react-router-dom';
 import Main from '../main/Main';
+import NavBar from '../navigation/Navbar';
 
 
 
@@ -16,6 +17,9 @@ class Routing extends React.Component {
         return(
             <>
                 <BrowserRouter>
+                <header>
+                    <NavBar/>            
+                </header>
                     <Switch>
                         <Route exact path='/' component={Main} />
                         <Route path='/film' component={Movie} />

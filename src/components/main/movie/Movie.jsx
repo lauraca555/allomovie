@@ -8,7 +8,7 @@ class Movie extends React.Component {
         return(
             <>
             
-                <h1>Page de la movie</h1>
+                <h1>Title movie</h1>
             
             </>
         )
