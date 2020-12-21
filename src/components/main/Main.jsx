@@ -22,8 +22,7 @@ class Main extends React.Component {
                         this.setState({
                             movies : response.data.results, 
                             isLoaded:true,
-                            movie : []
-                            
+                                                        
                         })
                   })  
                   .catch((error) => {
