@@ -1,5 +1,6 @@
 import React from 'react';
 import apiMovie from '../../axios/apiMovie';
+import CardImage from '../board/card/childrens/CardImage';
 
 
 
@@ -45,7 +46,20 @@ class Movie extends React.Component{
      
  
       return(
-        <h1>{this.state.movie.original_title}</h1>
+        <div className="container mt-5">
+            <div className="d-lg-flex ">
+                <div >
+                    <div><CardImage image = {this.state.movie.poster_path}/></div>
+                </div>
+                <div className="pl-lg-5 d-flex flex-column">
+                    <h1 className="mt-3">{this.state.movie.original_title}</h1>
+                    <div className="text-left mb-2">Date de sortie: {this.state.movie.release_date}</div>
+                    <div className="text-left mb-2">{this.state.movie.overview}</div>
+                </div>
+            </div>
+            
+            
+        </div>
     ) 
    } 
 }
