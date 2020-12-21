@@ -3,6 +3,7 @@ import apiMovie from '../axios/apiMovie';
 import Board from './board/Board';
 
 
+
 class Main extends React.Component {
     
     constructor(props){
@@ -20,7 +21,9 @@ class Main extends React.Component {
                         
                         this.setState({
                             movies : response.data.results, 
-                            isLoaded:true
+                            isLoaded:true,
+                            movie : []
+                            
                         })
                   })  
                   .catch((error) => {
@@ -32,9 +35,12 @@ class Main extends React.Component {
       render(){
           if(this.state.isLoaded === false) return <h4>Loading ...</h4>
           return(
-            <div className="container mt-5">
-                <Board movies = {this.state.movies}/>
-            </div>  
+                
+                <div className="container mt-5">
+                    
+                    <Board movies = {this.state.movies}/>
+                </div> 
+             
           )
       }
 }

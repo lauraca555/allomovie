@@ -8,7 +8,7 @@ class Board extends React.Component {
         return(
             <div className="row">
                 
-                <Card movies = {this.props.movies}/>
+                    <Card movies = {this.props.movies}/>               
                                 
             </div>
         )

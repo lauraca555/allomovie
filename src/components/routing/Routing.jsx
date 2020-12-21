@@ -22,7 +22,7 @@ class Routing extends React.Component {
                 </header>
                     <Switch>
                         <Route exact path='/' component={Main} />
-                        <Route path='/film' component={Movie} />
+                        <Route path='/movie/:id?' component= {Movie}/>
                     </Switch>
                 </BrowserRouter>
                     

@@ -7,7 +7,7 @@ class NavBar extends React.Component{
         return(
             <nav className="navbar navbar-light orange lighten-1">
                 <div className="container-fluid my-1">
-                    <NavLink to="/"> AlloMovie</NavLink>
+                    <NavLink to="/">AlloMovie</NavLink>
                 </div>
             </nav>
               
